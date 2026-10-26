@@ -29,225 +29,6 @@
       "layout": [
         {
           "widget": {
-            "name": "biological-sex",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "c521b44b",
-                  "fields": [
-                    {
-                      "name": "sex",
-                      "expression": "`sex`"
-                    },
-                    {
-                      "name": "measure(count)",
-                      "expression": "MEASURE(`count`)"
-                    }
-                  ],
-                  "disaggregated": false
-                }
-              }
-            ],
-            "spec": {
-              "frame": {
-                "showTitle": true,
-                "title": {
-                  "value": "Biological Sex",
-                  "fields": []
-                }
-              },
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "sex",
-                  "displayName": "Biological Sex",
-                  "scale": {
-                    "type": "categorical"
-                  }
-                },
-                "y": {
-                  "fieldName": "measure(count)",
-                  "displayName": "Count",
-                  "scale": {
-                    "type": "quantitative"
-                  }
-                }
-              },
-              "data": {
-                "queryName": "main_query"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 2,
-            "width": 6,
-            "height": 6
-          }
-        },
-        {
-          "widget": {
-            "name": "759bdb93",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "c521b44b",
-                  "fields": [
-                    {
-                      "name": "tb_diagnosis",
-                      "expression": "`tb_diagnosis`"
-                    },
-                    {
-                      "name": "measure(count)",
-                      "expression": "MEASURE(`count`)"
-                    }
-                  ],
-                  "disaggregated": false
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "tb_diagnosis",
-                  "displayName": "TB Diagnosis",
-                  "scale": {
-                    "type": "categorical",
-                    "sort": {
-                      "by": "y"
-                    }
-                  }
-                },
-                "y": {
-                  "fieldName": "measure(count)",
-                  "scale": {
-                    "type": "quantitative"
-                  }
-                }
-              },
-              "data": {
-                "queryName": "main_query"
-              }
-            }
-          },
-          "position": {
-            "x": 6,
-            "y": 2,
-            "width": 6,
-            "height": 6
-          }
-        },
-        {
-          "widget": {
-            "name": "0e23a5fa",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "c521b44b",
-                  "fields": [
-                    {
-                      "name": "genexpert_res",
-                      "expression": "`genexpert_res`"
-                    },
-                    {
-                      "name": "measure(count)",
-                      "expression": "MEASURE(`count`)"
-                    }
-                  ],
-                  "disaggregated": false
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "genexpert_res",
-                  "displayName": "GeneXpert Result",
-                  "scale": {
-                    "type": "categorical"
-                  }
-                },
-                "y": {
-                  "fieldName": "measure(count)",
-                  "scale": {
-                    "type": "quantitative"
-                  }
-                }
-              },
-              "data": {
-                "queryName": "main_query"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 8,
-            "width": 6,
-            "height": 6
-          }
-        },
-        {
-          "widget": {
-            "name": "a7ec2fc8",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "c521b44b",
-                  "fields": [
-                    {
-                      "name": "igra_result",
-                      "expression": "`igra_result`"
-                    },
-                    {
-                      "name": "measure(count)",
-                      "expression": "MEASURE(`count`)"
-                    }
-                  ],
-                  "disaggregated": false
-                }
-              }
-            ],
-            "spec": {
-              "version": 3,
-              "widgetType": "bar",
-              "encodings": {
-                "x": {
-                  "fieldName": "igra_result",
-                  "displayName": "IGRA Result",
-                  "scale": {
-                    "type": "categorical"
-                  }
-                },
-                "y": {
-                  "fieldName": "measure(count)",
-                  "scale": {
-                    "type": "quantitative"
-                  }
-                }
-              },
-              "data": {
-                "queryName": "main_query"
-              }
-            }
-          },
-          "position": {
-            "x": 6,
-            "y": 8,
-            "width": 6,
-            "height": 6
-          }
-        },
-        {
-          "widget": {
             "name": "bda22124",
             "multilineTextboxSpec": {
               "lines": [
@@ -309,7 +90,669 @@
         },
         {
           "widget": {
-            "name": "c574100c",
+            "name": "smear_grade",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "smear_grade",
+                      "expression": "`smear_grade`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Smear Grade",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "smear_grade",
+                  "displayName": "smear_grade",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "smear_grade",
+                  "displayName": "smear_grade",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 2,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "cxr_finding",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "cxr_finding",
+                      "expression": "`cxr_finding`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Chest X-ray Finding",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "cxr_finding",
+                  "displayName": "Chest X-ray",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "cxr_finding",
+                  "displayName": "cxr_finding",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "art_status",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    },
+                    {
+                      "name": "art",
+                      "expression": "`art`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "ART Status"
+              },
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "measure(count)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "count"
+                },
+                "color": {
+                  "fieldName": "art",
+                  "displayName": "art",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ethnicity",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "ethnicity",
+                      "expression": "`ethnicity`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Ethnicity",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "ethnicity",
+                  "displayName": "Ethnicity",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "ethnicity",
+                  "displayName": "ethnicity",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 14,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "referral_source",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "referral_source",
+                      "expression": "`referral_source`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Referral Source",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "referral_source",
+                  "displayName": "referral_source",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "referral_source",
+                  "displayName": "referral_source",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 14,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "study_group",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    },
+                    {
+                      "name": "study_group",
+                      "expression": "`study_group`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Study Group"
+              },
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "measure(count)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "displayName": "count"
+                },
+                "color": {
+                  "fieldName": "study_group",
+                  "displayName": "study_group",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 20,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "biological_sex",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "genexpert_rif",
+                      "expression": "`genexpert_rif`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "GeneXpert RIF Resistance",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "genexpert_rif",
+                  "displayName": "RIF Resistance",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "Count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "genexpert_rif",
+                  "displayName": "genexpert_rif",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "tb_diagnosis",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "tb_diagnosis",
+                      "expression": "`tb_diagnosis`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "TB Diagnosis",
+                  "fields": []
+                }
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "tb_diagnosis",
+                  "displayName": "tb_diagnosis",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "y"
+                    }
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "tb_diagnosis",
+                  "displayName": "tb_diagnosis",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 20,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "genexpert_res",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "genexpert_res",
+                      "expression": "`genexpert_res`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "GeneXpert Result"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "genexpert_res",
+                  "displayName": "genexpert_res",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "genexpert_res",
+                  "displayName": "genexpert_res",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 26,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "igra_result",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c521b44b",
+                  "fields": [
+                    {
+                      "name": "igra_result",
+                      "expression": "`igra_result`"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "IGRA Result"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "igra_result",
+                  "displayName": "igra_result",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(count)",
+                  "displayName": "count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "igra_result",
+                  "displayName": "igra_result",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 26,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "hiv_status",
             "queries": [
               {
                 "name": "main_query",
@@ -330,12 +773,19 @@
               }
             ],
             "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "HIV Status",
+                  "fields": []
+                }
+              },
               "version": 3,
               "widgetType": "bar",
               "encodings": {
                 "x": {
                   "fieldName": "hiv_status",
-                  "displayName": "HIV Status",
+                  "displayName": "hiv_status",
                   "scale": {
                     "type": "categorical",
                     "sort": {
@@ -345,8 +795,16 @@
                 },
                 "y": {
                   "fieldName": "measure(count)",
+                  "displayName": "count",
                   "scale": {
                     "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "hiv_status",
+                  "displayName": "hiv_status",
+                  "scale": {
+                    "type": "categorical"
                   }
                 }
               },
@@ -357,14 +815,14 @@
           },
           "position": {
             "x": 0,
-            "y": 14,
+            "y": 32,
             "width": 6,
             "height": 6
           }
         },
         {
           "widget": {
-            "name": "6390b9be",
+            "name": "smoking_status",
             "queries": [
               {
                 "name": "main_query",
@@ -385,12 +843,19 @@
               }
             ],
             "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Smoking Status",
+                  "fields": []
+                }
+              },
               "version": 3,
               "widgetType": "bar",
               "encodings": {
                 "x": {
                   "fieldName": "smoking_status",
-                  "displayName": "Smoking Status",
+                  "displayName": "smoking_status",
                   "scale": {
                     "type": "categorical",
                     "sort": {
@@ -400,8 +865,16 @@
                 },
                 "y": {
                   "fieldName": "measure(count)",
+                  "displayName": "count",
                   "scale": {
                     "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "smoking_status",
+                  "displayName": "smoking_status",
+                  "scale": {
+                    "type": "categorical"
                   }
                 }
               },
@@ -412,14 +885,14 @@
           },
           "position": {
             "x": 6,
-            "y": 14,
+            "y": 32,
             "width": 6,
             "height": 6
           }
         },
         {
           "widget": {
-            "name": "64666b28",
+            "name": "drug_type",
             "queries": [
               {
                 "name": "main_query",
@@ -440,12 +913,19 @@
               }
             ],
             "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "Type of Drugs used",
+                  "fields": []
+                }
+              },
               "version": 3,
               "widgetType": "bar",
               "encodings": {
                 "x": {
                   "fieldName": "drug_type",
-                  "displayName": "Type of Drugs used",
+                  "displayName": "drug_type",
                   "scale": {
                     "type": "categorical",
                     "sort": {
@@ -455,8 +935,16 @@
                 },
                 "y": {
                   "fieldName": "measure(count)",
+                  "displayName": "count",
                   "scale": {
                     "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "drug_type",
+                  "displayName": "drug_type",
+                  "scale": {
+                    "type": "categorical"
                   }
                 }
               },
@@ -467,7 +955,7 @@
           },
           "position": {
             "x": 0,
-            "y": 20,
+            "y": 38,
             "width": 6,
             "height": 6
           }
@@ -479,7 +967,58 @@
   ],
   "uiSettings": {
     "theme": {
-      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+      "canvasBackgroundColor": {
+        "light": "#F0EEEC",
+        "dark": "#1A1A2E"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#252535"
+      },
+      "widgetBorderColor": {
+        "light": "#E8E6E4",
+        "dark": "#353545"
+      },
+      "fontColor": {
+        "light": "#11171C",
+        "dark": "#E8ECF0"
+      },
+      "selectionColor": {
+        "light": "#FFC72A",
+        "dark": "#FFC72A"
+      },
+      "visualizationColors": [
+        "#7A003C",
+        "#FFC72A",
+        "#2D6A4F",
+        "#4A6FA5",
+        "#6B2D5C",
+        "#C44536",
+        "#D4A574",
+        "#1A4D2E"
+      ],
+      "widgetHeaderAlignment": "LEFT",
+      "widgetPadding": 12,
+      "widgetMargin": 8,
+      "widgetCornerRadius": 8,
+      "widgetShadow": 10,
+      "fontSettings": {
+        "base": {
+          "fontFamily": "Poppins",
+          "fontColor": {
+            "light": "#1A1A2E",
+            "dark": "#EBEBEB"
+          }
+        },
+        "widgetTitle": {
+          "fontFamily": "Poppins",
+          "fontColor": {
+            "light": "#7A003C",
+            "dark": "#FFC72A"
+          },
+          "fontWeight": 600
+        }
+      }
     },
     "applyModeEnabled": false
   }
